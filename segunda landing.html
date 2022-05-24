@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Unidos</title>
+    <link rel="icon" href="imagenes/icono16x16.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(".fixed").hide();
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            box-sizing: border-box;
+            /* para que los bordes, paddings estén en la anchura (determinada por col) */
+
+        }
+
+        nav {
+            position: fixed;
+            z-index: 1;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #77a5d07c;
+            width: "100%"
+
+
+
+        }
+        nav img{
+            height: 100px;
+        }
+
+
+
+
+
+        main {
+            background-color: #77A5D0;
+
+
+        }
+
+        h2 {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-align: left;
+            font-size: 400%;
+            font-weight: 100;
+            margin: 1px;
+            color: whitesmoke;
+        }
+
+        h3 {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-align: right;
+            font-size: 200%;
+            font-weight: 200;
+            color: whitesmoke;
+
+        }
+
+        h5 {
+            font-size: 80%;
+            padding: 10px;
+            color: whitesmoke;
+            text-align: right;
+        }
+
+        .segundalista {
+            color: black;
+            font-size: small;
+            display: inline;
+            list-style: none;
+            text-align: center;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+        }
+
+        footer a {
+            outline: none;
+            text-decoration: none;
+            display: inline-block;
+            color: black;
+            text-align: center;
+            font-family: "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 120;
+        }
+
+        footer {
+            padding-top: 20px;
+            background-color: whitesmoke;
+        }
+
+        div.fixed {
+            position: fixed;
+            bottom: 40px;
+            right: 20px;
+            width: 300px;
+            height: 150px;
+
+            background-color: #88bcec;
+            opacity: 60%;
+            border-radius: 20px;
+        }
+
+        button {
+            background-color: #77A5D0;
+            border-radius: 50px;
+
+
+        }
+
+
+
+
+        #cabecera {
+            padding-top: 60px;
+            padding-left: 100px;
+            
+        }
+
+        #cabecera img {
+            height: auto;
+            width: 100px;
+        }
+
+        #izq {
+            padding-left: 100px;
+            padding-bottom: 40px;
+
+        }
+
+        #der {
+            padding: 0px;
+        }
+
+        #izq img {
+            padding-top: 70px;
+            padding-left: 70px;
+
+
+            width: 550px;
+
+        }
+
+
+        #inf img {
+            padding-left: 10px;
+
+        }
+
+        #inf {
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+
+        #inf h3 {
+            padding-top: 20px;
+
+        }
+
+        #carrusel {
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 80px;
+
+        }
+
+        #carrusel img {
+            width: "70%"
+
+
+        }
+        #inf img{
+                width: 200px;
+            }
+
+
+        
+
+
+        @media only screen and (min-width: 400px),(max-width: 1200px){
+            nav img{
+            height: 100px;
+        }
+            h2 {
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                text-align: left;
+                font-size: 60px;
+                font-weight: 100;
+                margin: 1px;
+                color: whitesmoke;
+            }
+
+            h3 {
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                text-align: right;
+                font-size: 30px;
+                font-weight: 200;
+                color: whitesmoke;
+
+            }
+
+            h5 {
+                font-size: 10px;
+                padding: 10px;
+                color: whitesmoke;
+                text-align: right;
+            }
+
+            #carrusel {
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-bottom: 10px;
+
+            }
+
+            #carrusel img {
+                height: auto;
+            width: auto;
+
+            }
+
+            #cabecera {
+                padding-top: 40px;
+                padding-left: 0px;
+                align-items: center;
+            }
+
+            #izq {
+                padding-left: 30px;
+                padding-bottom: 20px;
+
+            }
+
+            #izq img {
+                padding-top: 30px;
+                padding-left: 60px;
+                width: 400px;
+
+            }
+
+            #cabecera img {
+                width: 1200px;
+
+            }
+ 
+ 
+}
+
+
+        @media only screen and (max-width: 400px) {
+            h2 {
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                text-align: left;
+                font-size: 30px;
+                font-weight: 100;
+                margin: 1px;
+                color: whitesmoke;
+                padding-bottom: 25px;
+                padding-top: 25px;
+            }
+
+            h3 {
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                text-align: right;
+                font-size: 0px;
+                font-weight: 200;
+                color: whitesmoke;
+
+            }
+
+            h5 {
+                font-size: 10px;
+                padding: 10px;
+                color: whitesmoke;
+                text-align: right;
+            }
+
+            #carrusel {
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-bottom: 10px;
+
+            }
+
+            #carrusel img {
+                height: 0px;
+
+            }
+
+            #cabecera {
+                padding-top: 80px;
+                padding-left: 30px;
+                padding-bottom: 40px;
+                align-items: center;
+            }
+
+            #izq {
+                padding-left: 30px;
+                padding-bottom: 20px;
+
+            }
+
+            #izq img {
+                padding-top: 30px;
+                padding-left: 0px;
+                width: 150px;
+
+            }
+
+            #cabecera img {
+                width: 350px;
+
+            }
+            #inf img{
+                width: 0px;
+            }
+            nav img{
+            height: 60px;
+                
+            }
+            
+        
+        
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container-fluid">
+        <div class="col-6">
+            <div class="row">
+                <img src="imagenes/cisne_final_Mesa de trabajo 1 copia.png" width="auto" >
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main>
+        <a name="inicio"></a>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-12" id="cabecera">
+                    <img src="imagenes/primera.png">
+                </div>
+
+                <div class="col-12" id="carrusel">
+                    <section class="container-fluid">
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo" data-slide-to="1"></li>
+                                <li data-target="#demo" data-slide-to="2"></li>
+                            </ul>
+
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="imagenes/carrusel/mujer derecha.png" alt="Editorial exterior" width="100%"
+                                        height="auto">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagenes/carrusel/meta.png" alt="Joyeria" width="100%" height="auto">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagenes/carrusel/pareja.png" alt="Campaña antitabaco" width="100%"
+                                        height="auto">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-6" id="izq">
+                    <h2>Banca tranquila <br>
+                        y sencilla,<br>
+                        <strong>para ti.</strong>
+                    </h2>
+                    <img src="imagenes/mockup.png"><br>
+                    <img src="imagenes/available.png">
+
+                </div>
+
+                <div class="col-6  " id="der">
+                    <iframe width="100%" height="55%" src="imagenes/video.mp4" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h2>Mirar tu saldo <br>
+                        o pedir cita <br>
+                        desde casa<br>
+                        <strong>a un solo clic.</strong>
+                    </h2>
+
+                </div>
+
+
+                <div class="col-6" id="inf" id="izq">
+                    <h3>Enfoca la imagen de la <br>derecha con la cámara de<br> su teléfono para disfrutar<br> de todas
+                        las
+                        ventajas.
+                    </h3>
+
+                </div>
+                <div class="col-6" id="inf" id="der">
+
+                    <img src="imagenes/qr.png" height="auto">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <ul class="segundalista">
+
+                <li><strong>Contacto</strong></li>
+                <li>atenciónalcliente@unido2.es</li>
+                <li>@unido2</li>
+
+                <li>
+                    <h4><a href="#inicio">Vuelta</a></h4>
+                </li>
+
+            </ul>
+            <br>
+
+        </footer>
+        <div class="fixed">
+
+            <h5><strong>Utilizamos cookies con diversos fines</strong> <br>
+                Con ello, podremos facilitarte en la medida <br>de lo posible el uso de
+                nuestra página web <br>y mejorar constantemente esta página.<br><br><button><strong>
+                        <h5>Aceptar cookies</h5>
+                    </strong></button> </h5>
+
+        </div>
+
+</body>
+
+</html>
