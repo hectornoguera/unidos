@@ -26,7 +26,7 @@
 
         div {
             box-sizing: border-box;
-            
+
         }
 
         nav {
@@ -35,14 +35,13 @@
             padding-top: 10px;
             padding-bottom: 10px;
             background-color: #77a5d07c;
-            width: "100%"
+            width: "100vw"
 
 
 
         }
-        nav img{
-            height: 100px;
-        }
+
+        
 
 
 
@@ -61,6 +60,9 @@
             font-weight: 100;
             margin: 1px;
             color: whitesmoke;
+            display: flex;
+            align-items: center;
+            
         }
 
         h3 {
@@ -69,6 +71,8 @@
             font-size: 200%;
             font-weight: 200;
             color: whitesmoke;
+            display: flex;
+            align-items: center;
 
         }
 
@@ -131,12 +135,13 @@
         #cabecera {
             padding-top: 60px;
             padding-left: 100px;
-            
+
         }
 
         #cabecera img {
+            width:  100vw;
             height: auto;
-            width: 100px;
+            
         }
 
         #izq {
@@ -182,22 +187,24 @@
         }
 
         #carrusel img {
-            width: "70%"
+            width:  100vw;
+            height: auto;
 
 
         }
-        #inf img{
-                width: 200px;
-            }
 
-
-        
-
-
-        @media only screen and (min-width: 400px),(max-width: 1200px){
-            nav img{
-            height: 100px;
+        #inf img {
+            width: 200px;
         }
+
+
+
+
+
+        @media screen and (min-width: 576px),
+        (max-width: 992px) {
+            
+
             h2 {
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
                 text-align: left;
@@ -205,6 +212,7 @@
                 font-weight: 100;
                 margin: 1px;
                 color: whitesmoke;
+               
             }
 
             h3 {
@@ -231,8 +239,8 @@
             }
 
             #carrusel img {
-                height: auto;
-            width: auto;
+                width:  100vw;
+            height: auto;
 
             }
 
@@ -256,24 +264,26 @@
             }
 
             #cabecera img {
-                width: 1200px;
+                width:  100vw;
+            height: auto;
 
             }
- 
- 
-}
+
+
+        }
 
 
         @media only screen and (max-width: 400px) {
             h2 {
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
                 text-align: left;
-                font-size: 30px;
+                font-size: 50px;
                 font-weight: 100;
                 margin: 1px;
                 color: whitesmoke;
-                padding-bottom: 25px;
-                padding-top: 25px;
+                
+    
+             
             }
 
             h3 {
@@ -300,7 +310,8 @@
             }
 
             #carrusel img {
-                height: 0px;
+                width: 50vh;
+                padding-bottom: 5vh;
 
             }
 
@@ -312,7 +323,7 @@
             }
 
             #izq {
-                padding-left: 30px;
+                padding-left: 100px;
                 padding-bottom: 20px;
 
             }
@@ -320,24 +331,29 @@
             #izq img {
                 padding-top: 30px;
                 padding-left: 0px;
-                width: 150px;
+                width: 200px;
 
             }
 
             #cabecera img {
-                width: 350px;
+                width:  100vw;
+            height: auto;
 
             }
-            #inf img{
+
+            #inf img {
                 width: 0px;
             }
-            nav img{
-            height: 60px;
-                
-            }
+
             
-        
-        
+            #inf text{
+                display: flex;
+            align-items: center;
+            }
+           
+
+
+
 
 
 
@@ -347,9 +363,9 @@
 
 <body>
     <nav class="container-fluid">
-        <div class="col-6">
+        <div class="col-12">
             <div class="row">
-                <img src="imagenes/cisne_final_Mesa de trabajo 1 copia.png" width="auto" >
+                <img src="imagenes/cisne_final_Mesa de trabajo 1 copia.png" height="auto" width="250vw">
             </div>
         </div>
     </nav>
@@ -393,37 +409,37 @@
                     </section>
                 </div>
 
-                <div class="col-6" id="izq">
+                <div class="col-sm-12 col-md-6" id="izq">
                     <h2>Banca tranquila <br>
                         y sencilla,<br>
-                        <strong>para ti.</strong>
+                        <h2><strong>para ti.</strong></h2>
                     </h2>
                     <img src="imagenes/mockup.png"><br>
                     <img src="imagenes/available.png">
 
                 </div>
 
-                <div class="col-6  " id="der">
+                <div class="col-sm-12 col-md-6" id="der">
                     <iframe width="100%" height="55%" src="imagenes/video.mp4" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <h2>Mirar tu saldo <br>
                         o pedir cita <br>
                         desde casa<br>
-                        <strong>a un solo clic.</strong>
+                        <h2><strong>a un solo clic.</strong> </h2>
                     </h2>
 
                 </div>
 
 
-                <div class="col-6" id="inf" id="izq">
+                <div class="col-sm-12 col-md-6" id="inf" id="izq">
                     <h3>Enfoca la imagen de la <br>derecha con la cámara de<br> su teléfono para disfrutar<br> de todas
                         las
                         ventajas.
                     </h3>
 
                 </div>
-                <div class="col-6" id="inf" id="der">
+                <div class="col-sm-12 col-md-6" id="inf" id="der">
 
                     <img src="imagenes/qr.png" height="auto">
                 </div>
